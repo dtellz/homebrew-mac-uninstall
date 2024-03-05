@@ -6,7 +6,7 @@ class MacUninstall < Formula
     license "MIT"
   
     def install
-      bin.install "bin/mac-uninstall"
+        bin.install "bin/mac-uninstall.sh" => "mac-uninstall"
     end
   
     test do
