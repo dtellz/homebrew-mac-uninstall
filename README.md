@@ -7,7 +7,7 @@ A simple CLI tool to help you uninstall applications on macOS by removing the ap
 You can install `mac-uninstall` via Homebrew with the following commands:
 
 ```bash
-brew tap username/mac-uninstall
+brew tap dtellz/mac-uninstall
 brew install mac-uninstall
 ```
 
