@@ -31,8 +31,14 @@ tempFile="$(mktemp)"
 
 # Search for files and add them to a temporary file
 for dir in "${dirs[@]}"; do
-  find $dir -name "*$appName*" -type f 2>/dev/null >> "$tempFile"
+  eval find $dir -name "*$appName*" -type f 2>/dev/null >> "$tempFile"
 done
+
+# Check if the main application bundle exists in /Applications
+appBundle="/Applications/$appName.app"
+if [ -d "$appBundle" ]; then
+  echo "$appBundle" >> "$tempFile"
+fi
 
 # Check if the temp file is empty
 if [ ! -s "$tempFile" ]; then
@@ -41,7 +47,7 @@ if [ ! -s "$tempFile" ]; then
 fi
 
 # Display found files to the user
-echo "The following files related to $appName will be deleted:"
+echo "The following files and directories related to $appName will be deleted:"
 cat "$tempFile"
 echo
 
