@@ -1,5 +1,11 @@
 # mac-uninstall
 
+<p align="center" margin="0">
+    <a href="https://www.diego-tellez.com/">
+    <img alt="stuart logo" src="./assets/mac-uninstall-logo.png" width="250">
+</a>
+</p>
+
 A simple CLI tool to help you uninstall applications on macOS by removing the application itself and associated files in various directories.
 
 ## Installation
@@ -27,14 +33,9 @@ For example, if you want to uninstall "ExampleApp", you would run:
 mac-uninstall ExampleApp
 ```
 
-`mac-uninstall` will search for and remove the application and its related files in the following directories:
+`mac-uninstall` will search for all the files that need to be deleted for a clean uninstall and ask you to proceed (y/n).
 
-~/Library/Application Support
-~/Library/Caches
-~/Library/Preferences
-~/Library/Logs
-~/Library/Cookies
-/Applications
+Once you input `y` the tool will remove the application and its related files from your mac system.
 
 ## Contributing
 
