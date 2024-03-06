@@ -1,4 +1,4 @@
-# mac-uninstall
+# mac-uninstall 🗑  🧹
 
 <p align="center" margin="0">
     <a href="https://www.diego-tellez.com/">
