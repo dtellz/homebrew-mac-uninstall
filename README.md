@@ -13,6 +13,8 @@ brew install mac-uninstall
 
 ## Usage
 
+`IMPORTANT: (PR is welcomed to fix this manual step)` Before or after running `mac-uninstall`, you will also need to delete the "application.app" from the Applications folder manually, navigate to it with finder and drag and drop the app icon to the Bin. I haven't yet found a way to do this programmatically.
+
 To uninstall an application, simply run the next command replacing <app-name> with the name of the application you wish to uninstall.
 
 ```bash
