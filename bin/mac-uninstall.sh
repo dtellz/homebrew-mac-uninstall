@@ -31,7 +31,7 @@ tempFile="$(mktemp)"
 
 # Search for files and add them to a temporary file
 for dir in "${dirs[@]}"; do
-  find $dir -name "*$appName*" -type f 2>/dev/null >> "$tempFile"
+  find $dir -iname "*$appName*" -type f 2>/dev/null >> "$tempFile"
 done
 
 # Check if the temp file is empty
