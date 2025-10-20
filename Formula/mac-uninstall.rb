@@ -1,8 +1,8 @@
 class MacUninstall < Formula
     desc "CLI tool to uninstall macOS apps by deleting related files and the application itself"
     homepage "https://github.com/dtellz/mac-uninstall"
-    url "https://github.com/dtellz/mac-uninstall/archive/refs/tags/v1.0.2.tar.gz"
-    sha256 "3073dac8c03a513ff38661c9cc8dab792c1f59ce6477235609f106bfe80d3d5c"
+    url "https://github.com/dtellz/mac-uninstall/archive/refs/tags/v1.0.3.tar.gz"
+    sha256 "8321a7683de7469f68038154b0c8c91fd13794c2ffd23407da086fa21a884aeb"
     license "MIT"
   
     def install
